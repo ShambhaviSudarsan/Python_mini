@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+< lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab List</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #e9e4e6;
+        }
+        </style>
+</head>
+<body>
+
+              <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a href="/" class="navbar-brand">Lab Assignment</a>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                  </ul>
+                </div>
+              </nav>
+
+<br><br>
+<br>
+<br>
+<h1 align="center" style="color:#048998">Lab Details</h1>
+{% for row in rows %}
+<div class="w3-hover-shadow w3-auto w3-white w3-round-large w3-padding">
+<br>
+<table class="table table-bordered">        
+    <tbody >
+       
+        <tr >
+          <td>Name :</td>
+          <td>{{row['name']}}</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>{{row['date']}}</td>
+          </tr>
+          <tr>
+            <td>Time</td>
+          <td>{{row['time']}}</td>
+        </tr>
+       
+    </tbody>
+  
+</table>
+</div>
+<br>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab Home</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+            body {
+                background-color: #e9e4e6;
+            }
+            </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <div class="w3-hover-shadow w3-auto w3-white w3-round-large w3-padding">
+               <br> <h1><center>Lab assignment App</center></h1>
+                <br>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a href="/" class="navbar-brand">Lab Assignment</a>
+                  </div>
+                  
+                </div>
+              </nav>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <form action="{{ url_for('datadisplay') }}" method="POST">
+                    <button class="btn btn-light btn-lg">Assign Lab</button>
+                  </form>
+                  <br><br>
+    <form action="{{ url_for('display') }}" method="POST">
+            <button class="btn btn-light btn-lg">View Lab Assignmets</button>
+          </form>
+    
+</div>
+
+</body>
+</html>

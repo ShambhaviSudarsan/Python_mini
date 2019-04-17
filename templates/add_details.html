@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Lab Assignment</title>
+    <style>
+        body {
+            background-color: #e9e4e6;
+        }
+        </style>
+  </head>
+  <body>
+      <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-left">
+            <li>
+              <a href="/" >Lab Assignment App</a>
+            </li>
+          </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            </ul>
+          </div>
+        </nav>
+        
+    <br>
+    <br>
+    <br>
+
+        <div class="w3-hover-shadow w3-auto w3-white w3-round-large w3-padding">
+
+          
+
+    <h1><center>Lab assignment App</center></h1>
+    <form action = "{{ url_for('postadd') }}" method = "POST">
+	  <div class="form-group">
+		    <label for="exampleInputEmail1"><h4>Lab name and number</h4></label>
+		    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter Lab Details" name="name">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1"><h4>Date</h4></label>
+		    <input type="date" class="form-control"  placeholder="dd/mm/yyyy" name="date">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1"><h4>Time</h4></label>
+		    <input type="time" class="form-control"  placeholder="hh:mm am/pm" name="time">
+		  </div>
+		  
+	  <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
